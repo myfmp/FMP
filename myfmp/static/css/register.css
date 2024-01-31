@@ -1,0 +1,249 @@
+/* CSS Document */
+/* ---------- FONTAWESOME ---------- */
+/* ---------- http://fortawesome.github.com/Font-Awesome/ ---------- */
+/* ---------- http://weloveiconfonts.com/ ---------- */
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+/* ---------- ERIC MEYER'S RESET CSS ---------- */
+/* ---------- http://meyerweb.com/eric/tools/css/reset/ ---------- */
+@import url(http://meyerweb.com/eric/tools/css/reset/reset.css);
+/* ---------- FONTAWESOME ---------- */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* ---------- GENERAL ---------- */
+* {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+}
+*:before, *:after {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://wallpapershome.com/images/wallpapers/macos-big-sur-1280x720-dark-wwdc-2020-22655.jpg);
+  background-size: cover;
+  color: white;
+  font: 87.5%/1.5em 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+a {
+  color: #eee;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+input {
+  border: none;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5em;
+  padding: 0;
+  -webkit-appearance: none;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+  content: ' ';
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+.container {
+  left: 50%;
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+/* ---------- LOGIN ---------- */
+#login {
+  width: 280px;
+}
+
+#login form span {
+  background-color: #16182D;
+  border-radius: 3px 0px 0px 3px;
+  color: white;
+  display: block;
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  width: 50px;
+}
+
+#login form input {
+  height: 50px;
+}
+
+#login form input[type="text"], input[type="email"], input[type="password"] {
+  opacity: 0.9;
+  background-color: #16182D;
+  border-radius: 0px 3px 3px 0px;
+  color: #5C6279;
+  margin-bottom: 1em;
+  padding: 0 16px;
+  width: 230px;
+}
+
+#login form input[type="submit"] {
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background-color: #3A6DF0;
+  color: #eee;
+  font-weight: bold;
+  margin-bottom: 2em;
+  text-transform: uppercase;
+  width: 280px;
+}
+
+#login form input[type="submit"]:hover {
+  background-color: #1e59f1;
+}
+
+#login > p {
+  text-align: center;
+}
+
+#login > p span {
+  padding-left: 5px;
+}
+
+#pin {
+    display: block;
+    margin: 2em auto;
+    border: none;
+    padding: 0;
+    width: 10.5ch;
+    background: repeating-linear-gradient(90deg, #16182D 0, #16182D 1ch, transparent 0, transparent 1.5ch) 0 100%/10ch 2px no-repeat;
+    font: 5ch droid sans mono, consolas, monospace;
+    letter-spacing: 0.5ch;
+  }
+
+#pin:focus {
+  outline: none;
+  color: white;
+}
+
+#container2 {
+  position: relative;
+  margin: 0 auto;
+  padding: 30px;
+  width: 400px;
+  min-height: 380px;
+  transform: translateY(20%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  box-shadow: 0px 0 31px 0px rgb(0 0 0 / 10%);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+img {
+  width: 100px;
+  animation: bounce 1s ease-in infinite;
+}
+
+h1 {
+  margin: 20px 0 0 0;
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: var(--purple);
+}
+.card > p:nth-of-type(1) {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: var(--pink);
+}
+
+.card > p:nth-of-type(2) {
+  width: 100%;
+  margin: 20px 0;
+  font-size: 1.2rem;
+  text-align: center;
+  color: var(--purple);
+  line-height: 1.3rem;
+}
+
+.card {
+  width: 70%;
+}
+
+h4 {
+  margin: 20px 0 5px 0;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.buy-btn {
+  border: none;
+  padding: 7px 20px;
+  width: 50%;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  background-color: #3A6DF0;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+}
+
+@keyframes bounce {
+  50% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes scale {
+  50% {
+    transform: scale(0.9);
+  }
+}
+@keyframes roll {
+  0% {
+    transform: rotate(0deg);
+    left: 25%;
+  }
+  50% {
+    left: 60%;
+    transform: rotate(168deg);
+  }
+  100% {
+    transform: rotate(0deg);
+    left: 25%;
+  }
+}
+@keyframes move {
+  0% {
+    left: 25%;
+  }
+  50% {
+    left: 60%;
+  }
+  100% {
+    left: 25%;
+  }
+}

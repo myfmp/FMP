@@ -13,6 +13,7 @@ from django.views.decorators.csrf import csrf_exempt
 from .searcher import search_files
 from .user_manager import change_password, change_username
 from .file_manager import edit_file, delete_file
+from .quizzy import *
 
 
 def index(request):
@@ -1044,7 +1045,8 @@ def main(request):
                 else:
                     Get_related_Subject = Subjects.objects.get(id=int(User_Files.id_subject))
                     User_File_Data.append([User_Files.id, User_Files.file_path, User_Files.file_name, Get_related_Subject.subject])
-            return render(request, 'main.html', {'year': user_shcool_year, 'User_File_Data_Tmp': User_File_Data, 'username': Load_User.username, 'mail': Load_User.mail})
+            Quizs_Data = Quizzy_Request()
+            return render(request, 'main.html', {'year': user_shcool_year, 'User_File_Data_Tmp': User_File_Data, 'username': Load_User.username, 'mail': Load_User.mail, 'Quizs':Quizs_Data})
         else:
             return redirect('logout')
     else:

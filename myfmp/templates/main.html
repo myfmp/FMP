@@ -250,8 +250,24 @@ Your browser does not support the video tag.
     </div>
 
     <div  class="content-section main">
+
      <div class="content-section-title">MCQ</div>
-     <span style="text-align: center; color: grey;">Not available yet</span>
+
+     <div class="apps-card">
+
+        {% for Quizs_HTML in Quizs %}
+
+            <div class="app-card" style="margin-bottom: 20px;">
+                <div class="app-card__subtext"> <span style="zoom:120%;">{{Quizs_HTML.1}}</span> </div>
+                <div class="app-card-buttons">
+                    <a href="https://quizzy-skub.vercel.app/quiz?session={{Quizs_HTML.0}}" target="_blank"><button class="content-button status-button open" style="opacity:1; border: none; background-color: #3a6df0; color: white;">open</button></a>
+                </div>
+            </div>  
+
+        {%endfor%}
+
+     </div>  
+     
     </div>
 
        <div class="content-section" id="Mycloud" style="display: none;">
